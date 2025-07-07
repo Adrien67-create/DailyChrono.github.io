@@ -1,0 +1,454 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+ 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <script src="https://kit.fontawesome.com/dfc5f55492.js" crossorigin="anonymous"></script>
+
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./css/style.css" />
+        
+        <title>DailyChrono.com</title>
+    </head>
+    <body>
+        
+        <!--==================== HEADER ====================-->
+         <header class="header" id="header">
+            <nav class="nav container">
+                <h2> 
+                    DailyChrono
+                </h2>
+<button id="toggle-contrast" aria-pressed="false" aria-label="Basculer en mode contraste élevé">
+  ♿ Contraste élevé
+</button>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#vente" class="nav__link">En vente</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Produits</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#A propos" class="nav__link">À propos</a>
+                        </li>
+                          <li class="nav__item">
+                            <a href="#newsletter" class="nav__link">Newsletter</a>
+                        </li>
+                    </ul>
+
+                <div class="nav__close" id="nav-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__shop" id="cart-shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                
+<div class="search-container" role="search">
+  <label for="searchInput" id="search-label" class="visually-hidden">Rechercher un produit</label>
+  <input 
+    type="text" 
+    id="searchInput" 
+    name="search" 
+    placeholder="Rechercher un produit..." 
+    aria-label="Barre de recherche de produit"
+  />
+</div>
+
+
+        </header>
+
+
+         <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <div id="panier">
+
+</div>
+  <button class="cart__close" id="cart-close" aria-label="Fermer le panier">×</button>
+  <h2 class="cart__title-center">Votre Panier</h2>
+ 
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="./img/Beau.webp" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Beau bleu</h3>
+                        <span class="cart__price">1490€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                   <i class="fa-solid fa-minus"></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                    </div>
+
+                    <div class="cart__actions">
+    <button class="cart__btn-remove">Supprimer</button>
+</div>
+</article>
+                    
+                    <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="./img/Montredeplongée.jpg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Baltic</h3>
+                        <span class="cart__price">700€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class="fa-solid fa-minus"></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                   <i class="fa-solid fa-plus"></i>
+                                </span>
+                    </div>
+                                      <div class="cart__actions">
+    <button class="cart__btn-remove">Supprimer</button>
+</div>
+                </article>
+
+                 <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="./img/Montrequartz.jpg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Citizen</h3>
+                        <span class="cart__price">400€</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class="fa-solid fa-minus"></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                    </div>
+                                      <div class="cart__actions">
+    <button class="cart__btn-remove">Supprimer</button>
+</div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 produits</span>
+                <span class="cart__prices-total">2500€</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="./img/omega speedmaster.avif" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">Nouvelle montre <br> Collection Omega Speedmaster</h1>
+                        <p class="home__description">
+                            Nouvelle arrivage de la montre Omega speedmaster moonwatch proffesional, avec une design modern et resistant.
+                        </p>
+                        <span class="home__price">7000€</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Découvrir
+                            </a>
+
+                            <button class="button home__button">Ajouter au panier</button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="vente">
+                <h2 class="section__title">
+                    En vente
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">En vente</span>
+
+                        <img src="./img/Grandseiko.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Grande seiko</h3>
+                            <span class="featured__price">1400€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">En vente</span>
+
+                        <img src="./img/Montredeplongée.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Baltic</h3>
+                            <span class="featured__price">700€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">En vente</span>
+
+                        <img src="./img/Montrequartz.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Citizen</h3>
+                            <span class="featured__price">4OO€</span>
+                        </div>
+
+                        <button class="button featured__button">Ajouter au panier</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== A propos ====================-->
+             <section class="story section container" id="A propos">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                           À propos
+                        </h2>
+    
+                        <h1 class="story__title">
+                              Depuis sa création, <strong>DailyChrono</strong> s’impose comme une référence incontournable pour les passionnés d’horlogerie. <br> Basée à Genève, la capitale mondiale de la montre, notre entreprise sélectionne avec exigence des pièces de qualité, mêlant tradition suisse et innovation contemporaine.
+                        </h1>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="./img/Méchanisme.jpg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+             <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Produits
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="./img/Beau.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">Beau bleu</h3>
+                        <span class="products__price">1490€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./img/mido.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">Mido</h3>
+                        <span class="products__price">1200€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./img/yema.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">Yema</h3>
+                        <span class="products__price">400€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./img/Swatch.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">Swatch</h3>
+                        <span class="products__price">300€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src=".//img/Gshock.webp" alt="" class="products__img">
+
+                        <h3 class="products__title">G-shock</h3>
+                        <span class="products__price">80€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+                    
+                     <article class="products__card">
+                        <img src="./img/tissot.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Tissot PRX</h3>
+                        <span class="products__price">750€</span>
+
+                        <button class="products__button">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container" id="newsletter">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Abonnez-vous à notre<br> Newsletter</h2>
+                        <p class="newsletter__description">
+                           Ne manquez pas vos réductions. Abonnez-vous à notre newsletter pour recevoir les meilleures offres, réductions, coupons, cadeaux et bien plus encore.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Entrez votre email" class="newsletter__input">
+                        <button class="button">
+                            Inscrivez-vous
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Nos informations</h3>
+
+                    <ul class="footer__list">
+                        <li>Pl. de Longemalle 1</li>
+                        <li>Genève, Suisse</li>
+                        <li>1204</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">A propos</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Contactez-nous</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Support client</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">À propos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Produits</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Montres mécaniques</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Montres automatiques</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Montres quartz</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accessoires</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Réseaux</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Daily Chrono</span>
+        </footer>
+
+     <!--=============== JS ===============-->
+     
+    <script src="./js/main.js"> </script>
+    </body>
+</html>
+
+
