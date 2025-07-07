@@ -266,24 +266,21 @@ body.high-contrast .products__card {
   cursor: pointer;
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .10);
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
 }
 
 /*=============== HOME ===============*/
-/* Section d'accueil, disposition en grille */
+/* Section d'accueil */
 .home__container {
   position: relative;
   row-gap: 2.5rem;
@@ -352,7 +349,7 @@ body.high-contrast .products__card {
 }
 
 /*=============== BUTTONS ===============*/
-/* Styles généraux des boutons */
+/* Styles des boutons */
 .button {
   display: inline-block;
   background-color: var(--button-color);
@@ -451,7 +448,7 @@ body.high-contrast .products__card {
 }
 
 /*=============== PRODUCTS ===============*/
-/* Liste des autres produits */
+/* Liste des produits */
 .products__container {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -589,7 +586,7 @@ body.high-contrast .products__card {
 }
 
 /*=============== CART ===============*/
-/* Panier flottant sur le côté */
+
 .cart {
   position: fixed;
   background-color: var(--body-color);
@@ -743,7 +740,7 @@ body.high-contrast .products__card {
 
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 /* Styles pour très petits écrans */
 @media screen and (max-width: 320px) {
 /* Conteneur principal centré avec marges */
@@ -780,7 +777,7 @@ body.high-contrast .products__card {
   }
 }
 
-/* For medium devices */
+
 /* Styles pour petits écrans/tablettes */
 @media screen and (min-width: 576px) {
   .home__img-bg {
@@ -865,7 +862,8 @@ body.high-contrast .products__card {
   .testimonial__container,
   .newsletter__bg {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: -350px;
+  
+    
   }
 
   .story__section-title {
@@ -973,10 +971,9 @@ body.high-contrast .products__card {
   }
 }
 
-/* For large devices */
+
 /* Styles pour très grands écrans */
 @media screen and (min-width: 1024px) {
-/* Conteneur principal centré avec marges */
   .container {
     margin-left: auto;
     margin-right: auto;
